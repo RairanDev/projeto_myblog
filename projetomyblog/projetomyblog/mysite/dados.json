@@ -1,0 +1,853 @@
+[
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$T4TsQVIyCKoA0rk5VxKo9T$Ek55AfSaShss+9cNZub1q3yZvEG8RlBLWIEAA708GCk=",
+    "last_login": "2026-10-01T02:00:33.915Z",
+    "is_superuser": true,
+    "username": "rairan",
+    "first_name": "",
+    "last_name": "",
+    "email": "rairan@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-09-30T16:17:29.460Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "user2",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-09-30T17:14:50.411Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$LbZHA5kIBTdS4JY3H0eTYJ$PF00Hs8Idz68PHwF9a/MRsy3qfL1kayGA1EgKZbT/iQ=",
+    "last_login": null,
+    "is_superuser": true,
+    "username": "rairan2",
+    "first_name": "",
+    "last_name": "",
+    "email": "rairan2@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-10-01T03:48:09.004Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "by6nfxr5zuxyoqkccg11cm4rqi2ixz1u",
+  "fields": {
+    "session_data": ".eJxVjDkOwjAQAP-yNbKc-Fickj5vsHZ94ACypTipEH9HkVJAOzOaN3jat-L3nla_RJhggMsvYwrPVA8RH1TvTYRWt3VhcSTitF3MLabX7Wz_BoV6gQk0BzTDGBRpayWyQTdqymylVCYpMloyMyppsiaDdA1WRZco4pAdxgyfL8wbN8k:1xBx0S:lESEXvj_K67jAKN4ToYQsoOp651WZTcLqc1lJLV2dt0",
+    "expire_date": "2026-10-14T16:18:08.554Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "yemzne2zjt45okf5zsxpd2hlbjujsuhy",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSFQGEZcuu83kBkeUjU0Ke3K-O_apAvd3nPOfYlA21rD1vMSpiQuQovT78YUH7ntIN2p3WYZ57YuE8tdkQftcpxTfl4P9--gUq_f2nJE0EM0ZJ1TyIB-sFTYKWUgGwKrmBmNgmIJkM7RmeQzJdTFYyri_QHMGzfJ:1xC666:ZkB_rad3NvR8HwUKFclLeIlos6hyBMk0riBbM7hWpxo",
+    "expire_date": "2026-10-15T02:00:34.039Z"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 7,
+  "fields": {
+    "title": "Capitulo 1",
+    "slug": "capitulo-1",
+    "author": [
+      "rairan2"
+    ],
+    "body": "# Capítulo 1 \r\n\r\nO primeiro capítulo apresenta os principais componentes do Django através da criação de uma aplicação de blog. O projeto começa com a criação de um projeto Django e, dentro dele, uma aplicação chamada `blog`. A estrutura do Django separa as responsabilidades entre models, views, templates e URLs, permitindo organizar melhor o código da aplicação.\r\n\r\n## Principais conceitos\r\n\r\n- Criação de um projeto Django e de uma aplicação.\r\n- Configuração da aplicação no `INSTALLED_APPS`.\r\n- Criação do modelo `Post` para representar as publicações.\r\n- Uso do Django ORM para trabalhar com o banco de dados através de objetos Python.\r\n- Criação e aplicação de migrations.\r\n- Configuração do Django Admin para administrar os posts.\r\n- Criação de views para buscar e exibir os posts.\r\n- Configuração das URLs da aplicação.\r\n- Criação dos templates HTML.\r\n- Uso de templates base e herança com `{% extends %}` e `{% block %}`.\r\n- Utilização de arquivos CSS estáticos para estilizar o blog.\r\n\r\n## Modelo Post\r\n\r\nO modelo `Post` representa os artigos do blog e possui informações como:\r\n\r\n- título;\r\n- slug;\r\n- autor;\r\n- corpo do texto;\r\n- data de publicação;\r\n- status.\r\n\r\nO uso de um `PublishedManager` permite trabalhar diretamente com os posts publicados.\r\n\r\n## Views, templates e URLs\r\n\r\nAs views são responsáveis por receber uma requisição, consultar os dados necessários e retornar uma resposta. Os templates ficam responsáveis pela apresentação das informações, enquanto as URLs determinam qual view será executada para cada endereço acessado.\r\n\r\n## Django Admin\r\n\r\nO capítulo também apresenta o funcionamento do Django Admin, utilizado para cadastrar e administrar os posts. Dessa forma, o conteúdo criado no banco de dados pode ser posteriormente exibido pelas páginas públicas do blog.\r\n\r\n## Estrutura básica \r\n\r\n```\r\nProjeto Myblog\r\n\r\n Models    → dados\r\n\r\n Views   → lógica\r\n\r\nURLs      → endereços\r\n\r\nTemplates → interface\r\n\r\nAdmin     → gerenciamento\r\n```\r\n\r\nAssim, o primeiro capítulo constrói a base do blog e apresenta os principais conceitos necessários para desenvolver uma aplicação web utilizando Django.",
+    "publish": "2026-10-02T13:24:17Z",
+    "created": "2026-10-02T13:26:06.160Z",
+    "updated": "2026-10-02T13:55:24.866Z",
+    "status": "PB"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 8,
+  "fields": {
+    "title": "Capitulo 2",
+    "slug": "capitulo-2",
+    "author": [
+      "rairan2"
+    ],
+    "body": "# Capítulo 2 \r\n\r\n## 1. URLs amigáveis\r\n\r\nO capítulo começa melhorando as URLs dos posts. Em vez de usar somente o ID, a URL passa a incluir informações como data e slug:\r\n\r\n```\r\n/blog/2024/1/1/who-was-django-reinhardt/\r\n```\r\n\r\nPara gerar a URL de cada post automaticamente, foi utilizado o método:\r\n\r\n```python\r\nget_absolute_url()\r\n```\r\n\r\n## 2. Paginação\r\n\r\nQuando existem muitos posts, não é interessante mostrar todos de uma vez. Para isso, foi utilizada a classe `Paginator`.\r\n\r\n```python\r\npaginator = Paginator(post_list, 3)\r\n```\r\n\r\nNesse caso, são mostrados 3 posts por página.\r\n\r\nA página solicitada é obtida através do parâmetro:\r\n\r\n```python\r\nrequest.GET.get(\"page\", 1)\r\n```\r\n\r\nAssim, podem ser utilizadas URLs como:\r\n\r\n```\r\n/blog/?page=1\r\n/blog/?page=2\r\n```\r\n\r\nTambém foi criado um template reutilizável para os links de navegação:\r\n\r\n```\r\nPrevious\r\nPage 1 of 2\r\nNext\r\n```\r\n\r\n## 3. Tratamento de erros da paginação\r\n\r\nO capítulo apresenta o tratamento de situações em que o usuário informa uma página inválida. Foram utilizadas as exceções:\r\n\r\n- `PageNotAnInteger`\r\n- `EmptyPage`\r\n\r\nAssim, a aplicação consegue lidar com valores inválidos ou páginas que não possuem resultados.\r\n\r\n## 4. Class-Based Views\r\n\r\nO capítulo apresenta também as Class-Based Views (CBV). Em vez de criar uma view utilizando somente uma função, é possível utilizar classes fornecidas pelo Django.\r\n\r\nUm exemplo apresentado é a `ListView`.\r\n\r\nAs CBVs facilitam a implementação de comportamentos comuns nas aplicações Django.\r\n\r\n## 5. Formulários\r\n\r\nO Django possui um sistema próprio para criação e validação de formulários. São apresentadas duas classes principais:\r\n\r\n- **`Form`**: usado para criar formulários comuns.\r\n- **`ModelForm`**: usado quando o formulário está relacionado a um modelo. O Django pode utilizar os campos do modelo para gerar os campos correspondentes do formulário.\r\n\r\n## 6. Compartilhamento de posts por e-mail\r\n\r\nFoi criada uma funcionalidade para permitir que o usuário compartilhe um post por e-mail. Para isso foram utilizados:\r\n\r\n- formulário;\r\n- view;\r\n- URL;\r\n- template;\r\n- `send_mail()`.\r\n\r\nO formulário recebe as seguintes informações:\r\n\r\n- nome;\r\n- e-mail;\r\n- e-mail do destinatário;\r\n- comentário opcional.\r\n\r\n## 7. Comentários\r\n\r\nTambém foi implementado um sistema de comentários. O modelo `Comment` é relacionado ao modelo `Post`.\r\n\r\nOs comentários possuem as seguintes informações:\r\n\r\n- nome;\r\n- e-mail;\r\n- corpo;\r\n- data de criação;\r\n- status de ativo/inativo.\r\n\r\nFoi utilizado um `ModelForm` para permitir que o usuário envie comentários.\r\n\r\n## 8. CSRF e POST\r\n\r\nOs formulários que enviam dados utilizam o método `POST`.\r\n\r\nO Django também oferece proteção contra CSRF (Cross-Site Request Forgery). Nos formulários, é utilizado:\r\n\r\n```django\r\n{% csrf_token %}\r\n```\r\n\r\nTambém foi utilizado o decorador:\r\n\r\n```python\r\n@require_POST\r\n```\r\n\r\nEle permite que determinada view receba somente requisições `POST`.",
+    "publish": "2026-10-02T13:33:45Z",
+    "created": "2026-10-02T13:37:51.166Z",
+    "updated": "2026-10-02T13:54:57.651Z",
+    "status": "PB"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 9,
+  "fields": {
+    "title": "Capitulo 3",
+    "slug": "capitulo-3",
+    "author": [
+      "rairan2"
+    ],
+    "body": "# Capítulo 3\r\n\r\n## 1. Adicionando tags\r\n\r\nO capítulo começa adicionando tags aos posts utilizando o pacote `django-taggit`.\r\n\r\nAs tags permitem classificar os posts por assuntos. Para isso, o modelo `Post` recebe um campo de tags.\r\n\r\nDepois, as tags são exibidas na página de cada post e podem ser utilizadas para filtrar os posts.\r\n\r\nA URL para visualizar os posts de uma determinada tag segue o formato:\r\n\r\n```\r\n/blog/tag/<tag_slug>/\r\n```\r\n\r\nA view recebe o `tag_slug`, busca a tag correspondente e filtra os posts relacionados.\r\n\r\n## 2. Criando posts semelhantes\r\n\r\nDepois das tags, o capítulo implementa uma funcionalidade para encontrar posts semelhantes.\r\n\r\nA aplicação verifica quais posts possuem tags em comum com o post atual. Para contar as tags compartilhadas, é utilizado:\r\n\r\n```python\r\nCount('tags')\r\n```\r\n\r\nOs posts são então ordenados pela quantidade de tags em comum e pela data de publicação. O resultado é limitado aos quatro primeiros posts semelhantes.\r\n\r\n## 3. Criando template tags personalizados\r\n\r\nO Django permite criar template tags personalizados para reutilizar determinadas funcionalidades nos templates.\r\n\r\nÉ criado o arquivo:\r\n\r\n```\r\nblog/templatetags/blog_tags.py\r\n```\r\n\r\nUm dos exemplos do capítulo é um template tag para contar os posts publicados:\r\n\r\n```python\r\n@register.simple_tag\r\ndef total_posts():\r\n    return Post.published.count()\r\n```\r\n\r\nNo template, ele pode ser utilizado assim:\r\n\r\n```django\r\n{% total_posts %}\r\n```\r\n\r\nTambém é criado um template tag para mostrar os posts mais recentes:\r\n\r\n```django\r\n{% show_latest_posts %}\r\n```\r\n\r\nEsse recurso utiliza um **inclusion tag**, que renderiza um template específico com os posts encontrados.\r\n\r\n## 4. Criando filtros personalizados\r\n\r\nAlém dos template tags, o capítulo mostra como criar template filters personalizados.\r\n\r\nO filtro criado é utilizado para converter texto escrito em Markdown para HTML. A utilização no template fica:\r\n\r\n```django\r\n{{ post.body|markdown }}\r\n```\r\n\r\nO filtro utiliza a biblioteca:\r\n\r\n```python\r\nimport markdown\r\n```\r\n\r\ne transforma o conteúdo Markdown em HTML.\r\n\r\n## 5. Utilizando Markdown nos posts\r\n\r\nCom o Markdown, os posts podem conter formatação sem que o autor precise escrever HTML diretamente.\r\n\r\nPor exemplo, listas:\r\n\r\n```markdown\r\n* Um\r\n* Dois\r\n* Três\r\n```\r\n\r\nTambém podem ser utilizados elementos como texto em destaque:\r\n\r\n```markdown\r\n**texto em destaque**\r\n```\r\n\r\ne links:\r\n\r\n```markdown\r\n[Site do Django](https://www.djangoproject.com/)\r\n```\r\n\r\nO capítulo também utiliza o filtro `truncatewords_html` para limitar o conteúdo exibido sem gerar HTML inválido ou deixar tags abertas.\r\n\r\n## 6. Criando um sitemap\r\n\r\nO capítulo apresenta a criação de um sitemap utilizando o sistema de sitemaps do Django.\r\n\r\nÉ criada uma classe baseada em:\r\n\r\n```python\r\nfrom django.contrib.sitemaps import Sitemap\r\n```\r\n\r\nA classe define quais objetos devem aparecer no sitemap. Exemplo:\r\n\r\n```python\r\nclass PostSitemap(Sitemap):\r\n    changefreq = 'weekly'\r\n    priority = 0.9\r\n\r\n    def items(self):\r\n        return Post.published.all()\r\n\r\n    def lastmod(self, obj):\r\n        return obj.updated\r\n```\r\n\r\nDepois, o sitemap é conectado às URLs do projeto e pode ser acessado através de:\r\n\r\n```\r\n/sitemap.xml\r\n```\r\n\r\nO sitemap apresenta as URLs dos posts e informações como a data da última atualização.\r\n\r\n## 7. Criando um RSS Feed\r\n\r\nEm seguida, o capítulo adiciona um RSS Feed para disponibilizar os posts recentes do blog.\r\n\r\nÉ utilizada a classe:\r\n\r\n```python\r\nfrom django.contrib.syndication.views import Feed\r\n```\r\n\r\nA classe do feed define informações como:\r\n\r\n```python\r\nclass LatestPostsFeed(Feed):\r\n    title = 'My blog'\r\n    link = reverse_lazy('blog:post_list')\r\n    description = 'New posts of my blog.'\r\n```\r\n\r\nTambém são definidos os posts que aparecerão no feed e as informações de cada item:\r\n\r\n```python\r\ndef items(self):\r\n    return Post.published.all()[:5]\r\n```\r\n\r\nO feed disponibiliza os cinco posts publicados mais recentes. A URL do feed é:\r\n\r\n```\r\n/blog/feed/\r\n```\r\n\r\nO capítulo também mostra como utilizar um leitor de RSS, como o Fluent Reader, para acompanhar os novos posts.\r\n\r\n## 8. Adicionando a busca\r\n\r\nPor último, o capítulo implementa um sistema de busca de posts.\r\n\r\nO tutorial utiliza os recursos de Full-Text Search do PostgreSQL. São utilizados:\r\n\r\n- `SearchVector`\r\n- `SearchQuery`\r\n- `SearchRank`\r\n\r\nCada um tem uma função:\r\n\r\n- **`SearchVector`**: define os campos que serão pesquisados, como o título e o corpo do post.\r\n- **`SearchQuery`**: representa o termo pesquisado pelo usuário.\r\n- **`SearchRank`**: permite ordenar os resultados de acordo com a relevância.\r\n\r\nTambém são utilizados pesos diferentes para os campos, dando maior importância ao título do post do que ao seu conteúdo.\r\n\r\nA busca é apresentada através de um formulário:\r\n\r\n```django\r\n<form method=\"get\">\r\n    {{ form.as_p }}\r\n    \"<input type=\"submit\" value=\" Search \">\r\n</form>\"\r\n```\r\n\r\nQuando o usuário realiza uma pesquisa, os resultados encontrados são apresentados em uma página específica.",
+    "publish": "2026-10-02T13:45:58Z",
+    "created": "2026-10-02T13:47:34.665Z",
+    "updated": "2026-10-02T13:54:42.915Z",
+    "status": "PB"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 10,
+  "fields": {
+    "title": "post4",
+    "slug": "post4",
+    "author": [
+      "rairan2"
+    ],
+    "body": "teste",
+    "publish": "2026-10-01T14:15:07Z",
+    "created": "2026-10-02T14:15:26.806Z",
+    "updated": "2026-10-02T14:16:45.897Z",
+    "status": "PB"
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 3,
+  "fields": {
+    "post": 7,
+    "name": "fulano",
+    "email": "fulano@gmaiil.com",
+    "body": "nice!",
+    "created": "2026-10-02T13:33:13.100Z",
+    "updated": "2026-10-02T13:33:13.100Z",
+    "active": true
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 1,
+  "fields": {
+    "name": "jazz",
+    "slug": "jazz"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 2,
+  "fields": {
+    "name": "music",
+    "slug": "music"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 3,
+  "fields": {
+    "name": "django2",
+    "slug": "django"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 4,
+  "fields": {
+    "name": "django",
+    "slug": "django_1"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 5,
+  "fields": {
+    "name": "testes",
+    "slug": "testes"
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 5,
+  "fields": {
+    "tag": 4,
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": 7
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 6,
+  "fields": {
+    "tag": 4,
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": 8
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 7,
+  "fields": {
+    "tag": 4,
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": 9
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 8,
+  "fields": {
+    "tag": 5,
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": 10
+  }
+},
+{
+  "model": "sites.site",
+  "fields": {
+    "domain": "localhost:8000",
+    "name": "localhost:8000"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2026-09-30T16:23:42.083Z",
+    "user": [
+      "rairan"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "1",
+    "object_repr": "Post object (1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2026-10-01T03:49:25.649Z",
+    "user": [
+      "rairan"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "6",
+    "object_repr": "primeira postagem",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2026-10-01T03:53:00.863Z",
+    "user": [
+      "rairan"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "6",
+    "object_repr": "primeira postagem",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2026-10-01T03:53:54.556Z",
+    "user": [
+      "rairan"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "2",
+    "object_repr": "another post",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2026-10-01T03:54:00.941Z",
+    "user": [
+      "rairan"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "4",
+    "object_repr": "New Title",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2026-10-01T03:54:06.818Z",
+    "user": [
+      "rairan"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "2",
+    "object_repr": "another post",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2026-10-01T03:54:13.906Z",
+    "user": [
+      "rairan"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "4",
+    "object_repr": "New Title",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2026-10-02T01:20:34.940Z",
+    "user": [
+      "rairan"
+    ],
+    "content_type": [
+      "taggit",
+      "tag"
+    ],
+    "object_id": "3",
+    "object_repr": "django2",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2026-10-02T05:04:30.040Z",
+    "user": [
+      "rairan"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "6",
+    "object_repr": "primeira postagem",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Body\", \"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2026-10-02T05:18:46.886Z",
+    "user": [
+      "rairan"
+    ],
+    "content_type": [
+      "sites",
+      "site"
+    ],
+    "object_id": "1",
+    "object_repr": "localhost:8000",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Domain name\", \"Display name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2026-10-02T13:23:49.499Z",
+    "user": [
+      "rairan"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "3",
+    "object_repr": "another post2",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2026-10-02T13:24:13.081Z",
+    "user": [
+      "rairan"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "5",
+    "object_repr": "one more post",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2026-10-02T13:24:13.081Z",
+    "user": [
+      "rairan"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "2",
+    "object_repr": "another post",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2026-10-02T13:24:13.081Z",
+    "user": [
+      "rairan"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "4",
+    "object_repr": "New Title",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2026-10-02T13:24:13.081Z",
+    "user": [
+      "rairan"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "6",
+    "object_repr": "primeira postagem",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2026-10-02T13:26:06.234Z",
+    "user": [
+      "rairan"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "7",
+    "object_repr": "CAPITULO 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2026-10-02T13:30:19.209Z",
+    "user": [
+      "rairan"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "7",
+    "object_repr": "CAPITULO 1",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2026-10-02T13:31:17.652Z",
+    "user": [
+      "rairan"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "7",
+    "object_repr": "CAPITULO 1",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2026-10-02T13:31:54.634Z",
+    "user": [
+      "rairan"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "7",
+    "object_repr": "CAPITULO 1",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2026-10-02T13:37:51.205Z",
+    "user": [
+      "rairan"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "8",
+    "object_repr": "Capitulo 2",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2026-10-02T13:40:10.636Z",
+    "user": [
+      "rairan"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "8",
+    "object_repr": "Capitulo 2",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2026-10-02T13:41:32.569Z",
+    "user": [
+      "rairan"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "7",
+    "object_repr": "Capitulo 1",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Title\", \"Body\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2026-10-02T13:42:53.505Z",
+    "user": [
+      "rairan"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "7",
+    "object_repr": "Capitulo 1",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2026-10-02T13:44:02.793Z",
+    "user": [
+      "rairan"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "7",
+    "object_repr": "Capitulo 1",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2026-10-02T13:47:34.697Z",
+    "user": [
+      "rairan"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "9",
+    "object_repr": "Capitulo 3",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2026-10-02T13:48:07.856Z",
+    "user": [
+      "rairan"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "9",
+    "object_repr": "Capitulo 3",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2026-10-02T13:51:25.163Z",
+    "user": [
+      "rairan"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "9",
+    "object_repr": "Capitulo 3",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2026-10-02T13:52:01.555Z",
+    "user": [
+      "rairan"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "9",
+    "object_repr": "Capitulo 3",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2026-10-02T13:52:27.319Z",
+    "user": [
+      "rairan"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "9",
+    "object_repr": "Capitulo 3",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2026-10-02T13:54:42.932Z",
+    "user": [
+      "rairan"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "9",
+    "object_repr": "Capitulo 3",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2026-10-02T13:54:57.665Z",
+    "user": [
+      "rairan"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "8",
+    "object_repr": "Capitulo 2",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2026-10-02T13:55:24.883Z",
+    "user": [
+      "rairan"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "7",
+    "object_repr": "Capitulo 1",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2026-10-02T14:15:26.892Z",
+    "user": [
+      "rairan"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "10",
+    "object_repr": "post4",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2026-10-02T14:16:45.910Z",
+    "user": [
+      "rairan"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "10",
+    "object_repr": "post4",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Publish\"]}}]"
+  }
+}
+]
